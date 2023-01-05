@@ -1,6 +1,8 @@
+package src;
+
 import java.util.ArrayList;
 
-public class BookList {
+public class BookList  {
 	public static void main(String[] args) {
 	
 Book book1 = new Book("Holes", "Louis Sachar", "On Shelf", 5, null);
