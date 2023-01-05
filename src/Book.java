@@ -7,12 +7,12 @@ String title;
 String author;
 
 String status;
-
-String condition;
+//int condition is on a 5 point rating
+int condition;
 
 Date dueDate;
 
-public Book(String title, String author, String status, String condition, Date dueDate) {
+public Book(String title, String author, String status, int condition, Date dueDate) {
 	super();
 	this.title = title;
 	this.author = author;
@@ -20,6 +20,7 @@ public Book(String title, String author, String status, String condition, Date d
 	this.condition = condition;
 	this.dueDate = dueDate;
 }
+
 
 public String getTitle() {
 	return title;
@@ -45,11 +46,11 @@ public void setStatus(String status) {
 	this.status = status;
 }
 
-public String getCondition() {
+public int getCondition() {
 	return condition;
 }
 
-public void setCondition(String condition) {
+public void setCondition(int condition) {
 	this.condition = condition;
 }
 
