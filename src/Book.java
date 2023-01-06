@@ -1,4 +1,4 @@
-package src;
+
 
 import java.util.Date;
 
@@ -13,6 +13,10 @@ String status;
 int condition;
 
 Date dueDate;
+
+public void shout(int a) {
+	System.out.println(this.title +", "+ this.author +", "+ this.status + ", Condition: "+ this.condition + "/5" );
+}
 
 public Book(String title, String author, String status, int condition, Date dueDate) {
 	super();

@@ -1,5 +1,5 @@
-package src;
 
+/*
 import java.util.ArrayList;
 
 public class BookList  {
@@ -18,7 +18,7 @@ Book book10 = new Book("Passing", "Nella Larson", "On Shelf", 5, null);
 Book book11 = new Book("Room", "Emma Donoghue", "On Shelf", 5, null);
 Book book12 = new Book("Columbine", "Dave Cullen", "On Shelf", 5, null);
 
-ArrayList<Book> books = new ArrayList<Book>();
+ ArrayList<Book> books = new ArrayList<Book>();
 books.add(book1);
 books.add(book2);
 books.add(book3);
@@ -35,3 +35,5 @@ books.add(book12);
 	
 	}
 }
+
+*/
