@@ -14,7 +14,7 @@ int condition;
 
 Date dueDate;
 
-public void shout(int a) {
+public void shout() {
 	System.out.println(this.title +", "+ this.author +", "+ this.status + ", Condition: "+ this.condition + "/5" );
 }
 
