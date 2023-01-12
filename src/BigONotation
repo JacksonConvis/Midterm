@@ -1,0 +1,5 @@
+Our worst performing algorithm is O(n^2). It takes place when our for loops run inside of the do while loop which encases lines 44-123. 
+
+For loops are found on lines: 53, 58, 81 and 95
+
+We do not think that this could be made more efficient due to the need to take user input on repeating the program should they choose to look at more books after completing their transaction.
