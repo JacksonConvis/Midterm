@@ -14,18 +14,18 @@ public class LibraryTerminal {
 
 		Stack bookReturns = new Stack<Book>();
 
-		Book book1 = new Book("Holes", "Louis Sachar", "On Shelf", 5, null);
-		Book book2 = new Book("The Hobbit", "JRR Tolkien", "Checked Out", 4, null);
-		Book book3 = new Book("Howls Moving Castle", "Diana Jones", "On Shelf", 5, null);
-		Book book4 = new Book("Pride and Prejudice", "Jane Austen", "Checked Out", 5, null);
-		Book book5 = new Book("Frankenstein", "Mary Shelley", "On Shelf", 5, null);
-		Book book6 = new Book("Farenheit 451", "Ray Bradbury", "On Shelf", 5, null);
-		Book book7 = new Book("Fingersmith", "Sarah Waters", "On Shelf", 5, null);
-		Book book8 = new Book("Kindred", "Octavia E. Butler", "On Shelf", 5, null);
-		Book book9 = new Book("Euphoria", "Lily King", "Checked Out", 5, null);
-		Book book10 = new Book("Passing", "Nella Larson", "On Shelf", 5, null);
-		Book book11 = new Book("Room", "Emma Donoghue", "On Shelf", 5, null);
-		Book book12 = new Book("Columbine", "Dave Cullen", "On Shelf", 5, null);
+		Book book1 = new Book("Holes              ", "Louis Sachar  ", "On Shelf   ", 5, null);
+		Book book2 = new Book("The Hobbit         ", "JRR Tolkien   ", "Checked Out", 4, null);
+		Book book3 = new Book("Howls Moving Castle", "Diana Jones   ", "On Shelf   ", 5, null);
+		Book book4 = new Book("Pride and Prejudice", "Jane Austen   ", "Checked Out", 5, null);
+		Book book5 = new Book("Frankenstein       ", "Mary Shelley  ", "On Shelf   ", 5, null);
+		Book book6 = new Book("Farenheit 451      ", "Ray Bradbury  ", "On Shelf   ", 5, null);
+		Book book7 = new Book("Fingersmith        ", "Sarah Waters  ", "On Shelf   ", 5, null);
+		Book book8 = new Book("Kindred            ", "Octavia Butler", "On Shelf   ", 5, null);
+		Book book9 = new Book("Euphoria           ", "Lily King     ", "Checked Out", 5, null);
+		Book book10 = new Book("Passing            ", "Nella Larson  ", "On Shelf   ", 5, null);
+		Book book11 = new Book("Room               ", "Emma Donoghue ", "On Shelf   ", 5, null);
+		Book book12 = new Book("Columbine          ", "Dave Cullen   ", "On Shelf   ", 5, null);
 
 		ArrayList<Book> books = new ArrayList<Book>();
 		books.add(book1);
@@ -49,11 +49,13 @@ public class LibraryTerminal {
 			int select = scan.nextInt();
 
 			if (select == 1) {
-				// sysout "TITLE===== AUTHOR==== ETC."
+				System.out.println("Here is the Book List");
+				System.out.printf("%-20s %-15s %-10s %-10s %n", "Title", "Author", "Status", "Condition");
+				System.out.println("===========================================================");
 				for (int i = 0; i < books.size(); i++) {
 					books.get(i).shout();
 				}
-				System.out.println("Enter a book title to check out");
+				System.out.println("Enter a book title to check out:");
 				String chooseBook = scan.next();
 				for (Book book : books) {
 					if (book.title.contains(chooseBook)) {
@@ -73,7 +75,7 @@ public class LibraryTerminal {
 				}
 
 			} else if (select == 2) {
-				System.out.println("Please enter the first name of the author you're looking for");
+				System.out.println("Please enter the first name of the author you're looking for:");
 
 				String author = scan.next();
 

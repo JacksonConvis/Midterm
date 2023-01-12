@@ -15,7 +15,7 @@ int condition;
  LocalDate dueDate;
 
 public void shout() {
-	System.out.println(this.title +", "+ this.author +", "+ this.status + ", Condition: "+ this.condition + "/5" );
+	System.out.println(this.title +" "+ this.author + " "+ this.status + " Condition: "+ this.condition + "/5" );
 }
 
 public Book(String title, String author, String status, int condition, LocalDate dueDate) {
